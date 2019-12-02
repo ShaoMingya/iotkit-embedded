@@ -29,6 +29,10 @@
     #include "ota_service.h"
 #endif
 
+#ifdef ATM_ENABLED
+    #include "at_api.h"
+#endif
+
 char PRODUCT_KEY[IOTX_PRODUCT_KEY_LEN + 1] = {0};
 char PRODUCT_SECRET[IOTX_PRODUCT_SECRET_LEN + 1] = {0};
 char DEVICE_NAME[IOTX_DEVICE_NAME_LEN + 1] = {0};
